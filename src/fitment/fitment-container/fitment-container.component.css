@@ -1,0 +1,21 @@
+td {
+  display: inline-block;
+  text-align: center;
+  height: 1.5rem;
+}
+td span {
+  cursor: pointer;
+  vertical-align: middle;
+}
+.year {
+  width: 3rem;
+}
+.make {
+  width: 8rem;
+}
+.model {
+  width: 3rem;
+}
+.trim {
+  width: 8rem;
+}

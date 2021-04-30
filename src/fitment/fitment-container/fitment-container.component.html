@@ -1,0 +1,42 @@
+<button (click)="getYears()"> Select vehicle </button>
+<br><br>
+<h1>Year ({{ year$ | async }})</h1>
+<table>
+  <tr>
+    <td class="year" *ngFor="let year of years$ | async">
+      <span (click)="setYear(year)">
+      {{ year }}
+      </span>
+    </td>
+  </tr>
+</table>
+<h1>Make ({{ make$ | async }})</h1>
+<table>
+  <tr>
+    <td class="make" *ngFor="let make of makes$ | async">
+      <span (click)="setMake(make)">
+      {{ make }}
+      </span>
+    </td>
+  </tr>
+</table>
+<h1>Model ({{ model$ | async }})</h1>
+<table>
+  <tr>
+    <td class="model" *ngFor="let model of models$ | async">
+      <span (click)="setModel(model)">
+      {{ model }}
+      </span>
+    </td>
+  </tr>
+</table>
+<h1>Trim ({{ trim$ | async }})</h1>
+<table>
+  <tr>
+    <td class="trim" *ngFor="let trim of trims$ | async">
+      <span (click)="setTrim(trim)">
+      {{ trim }}
+      </span>
+    </td>
+  </tr>
+</table>
